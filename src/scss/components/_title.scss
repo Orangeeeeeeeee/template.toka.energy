@@ -1,0 +1,48 @@
+@use "../variables/index" as variables;
+@use "../mixins/index" as mixins;
+
+.title {
+    font-family: variables.$unbounded-font;
+    line-height: 1.4;
+
+    &--h1 {
+        font-size: 68px;
+
+        @include mixins.bp('tablet') {
+            font-size: 40px;
+        }
+
+        @include mixins.bp('mobile') {
+            font-size: 21px;
+        }
+    }
+
+    &--h2 {
+        font-size: 48px;
+    }
+
+    &--h3 {
+        font-size: 36px;
+
+        @include mixins.bp('mobile') {
+            font-size: 20px;
+        }
+    }
+
+    &--h4 {
+        font-size: 24px;
+
+        @include mixins.bp('mobile') {
+            font-size: 20px;
+        }
+    }
+
+    &--h5 {
+        font-size: 18px;
+    }
+
+    &--h6 {
+        font-size: 14px;
+    }
+}
+

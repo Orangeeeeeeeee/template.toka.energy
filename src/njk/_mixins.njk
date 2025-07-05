@@ -1,0 +1,82 @@
+{% macro iconSvgMulti(name, class) %}
+    <svg class="svg-icon {{class}}"><use xlink:href="icons/icons-multi.svg#icon-{{name}}"></use></svg>
+{% endmacro %}
+
+{% macro iconSvgMono(name, class) %}
+    <svg class="svg-icon {{class}}"><use xlink:href="icons/icons-mono.svg#icon-{{name}}"></use></svg>
+{% endmacro %}
+
+{% macro iconPng(name, class) %}
+    <i class="png-icon {{class}} {{name}}"></i>
+{% endmacro %}
+
+{% macro contentButton(text, iconName, leftIcon) %}
+    {% if leftIcon %}
+        <span class="button__icon">{{iconSvgMono(iconName)}}</span>
+        <span class="button__text">{{text}}</span>
+    {% else %}
+        <span class="button__text">{{text}}</span>
+        <span class="button__icon">{{iconSvgMono(iconName)}}</span>
+    {% endif %}
+{% endmacro %}
+
+
+
+
+
+
+{% macro buttonPrimary(leftIcon, text='', class='', iconName='arrow') %}
+    <button class="button button--primary {{class}}">
+        {{contentButton(text, iconName, leftIcon)}}
+    </button>
+{% endmacro %}
+
+{% macro linkPrimary(leftIcon, text='some text', link='', class='', iconName='arrow') %}
+    <a class="button button--primary {{class}}" href="{{link}}">
+        {{contentButton(text, iconName, leftIcon)}}
+    </a>
+{% endmacro %}
+
+{% macro buttonSecondary(leftIcon, text='', class='', iconName='arrow') %}
+    <button class="button button--secondary {{class}}">
+        {{contentButton(text, iconName, leftIcon)}}
+    </button>
+{% endmacro %}
+
+{% macro linkSecondary(leftIcon, text='some text', link='', class='', iconName='arrow') %}
+    <a class="button button--secondary {{class}}" href="{{link}}">
+        {{contentButton(text, iconName, leftIcon)}}
+    </a>
+{% endmacro %}
+
+
+
+
+{% macro sectionHead(badge='', title='', class='', badgeColor='blue-gradient') %}
+    <div class="section-head {{class}}">
+        <span class="badge badge--{{badgeColor}} t-t--uppercase section-head__badge">{{badge}}</span>
+        <h2 class="title title--h3 f-w--500 section-head__title">{{title}}</h2>
+    </div>
+{% endmacro %}
+
+
+{% macro appButton(type='') %}
+    <a href="" class="app-btn">
+        {% if type == 'android' %}
+            {{iconSvgMono('google-play', 'app-btn__logo')}}
+        {% else %}
+            {{iconSvgMono('apple-filled', 'app-btn__logo')}}
+        {% endif %}
+        <div class="app-btn__text">
+            <span class="app-btn__text-label">Download on the:</span>
+            <span class="app-btn__text-title">
+                {% if type == 'android' %}
+                    Google play
+                {% else %}
+                    App Store
+                {% endif %}
+            </span>
+        </div>
+        <div class="app-btn__icon-right">{{iconSvgMono('arrow-right')}}</div>
+    </a>
+{% endmacro %}

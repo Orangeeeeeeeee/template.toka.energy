@@ -1,0 +1,44 @@
+@use "../mixins" as mixins;
+
+.partners-slider {
+    position: relative;
+
+    &:after, &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        z-index: 99;
+    }
+
+    &:after {
+        right: 0;
+        background: linear-gradient(-90deg, #fff 0%, transparent 100%);
+    }
+
+    &:before {
+        left: 0;
+        background: linear-gradient(90deg, #fff 0%, transparent 100%);
+    }
+
+    &__wrapper {
+        transition-timing-function: linear !important;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: center;
+
+        @include mixins.bp('tablet') {
+            padding: 30px 20px;
+        }
+
+        @include mixins.bp('mobile') {
+            padding: 20px 10px;
+        }
+    }
+}

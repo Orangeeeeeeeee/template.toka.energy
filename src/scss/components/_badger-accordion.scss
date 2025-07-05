@@ -1,0 +1,36 @@
+.badger-accordion {
+    &__trigger {
+        padding: 25px 30px;
+        border-radius: 18px;
+        background-color: #fff;
+    }
+
+    &__panel {
+        max-height: 75vh;
+        overflow: hidden;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &.-ba-is-hidden {
+            max-height: 0 !important;
+            visibility: hidden;
+        }
+    }
+
+    &--initialized {
+        .badger-accordion__panel {
+            transition: all ease-in-out 0.2s;
+        }
+    }
+}
+
+
+

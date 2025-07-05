@@ -1,0 +1,51 @@
+@use "../mixins" as mixins;
+
+.tabs {
+    margin-bottom: 34px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+        margin-bottom: 34px;
+
+        @include mixins.bp('mobile') {
+            flex-direction: column;
+            row-gap: 5px;
+            align-items: stretch;
+            margin-bottom: 16px;
+        }
+
+        &-item {
+            padding: 18px 21px;
+            cursor: pointer;
+            transition: background-color .3s, color .3s;
+            background-color: transparent;
+            border-radius: 100px;
+            color: #62646A;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            svg {
+                width: 14px;
+                height: 14px;
+                transition: color .3s;
+            }
+
+            @include mixins.bp('mobile') {
+                text-align: center;
+            }
+
+            &.is-active, &:hover {
+                background-color: #252834;
+                color: #fff;
+
+                svg {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

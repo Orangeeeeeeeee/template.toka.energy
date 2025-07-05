@@ -1,0 +1,17 @@
+---
+title: Blog
+---
+{% extends "layouts/_layout.njk" %}
+
+{% block content %}
+
+    {# variable example #}
+    <h1>{{title}}</h1>
+
+    {# mixin example #}
+    {{mixins.iconSvgMono('home-mono')}}
+    {{mixins.iconSvgMulti('home-multi')}}
+    {{mixins.iconPng('alarm')}}
+    {{mixins.iconPng('smile')}}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+.social-link {
+    text-decoration: none;
+    display: inline-flex;
+    min-height: 51px;
+    border-radius: 70px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    &--black {
+        color: #000;
+        border-color: #fff;
+    }
+
+    &--white {
+        color: #fff;
+        border-color: #323232;
+    }
+}

@@ -1,0 +1,203 @@
+@use "../variables/index" as variables;
+@use "../mixins" as mixins;
+
+.hero {
+    position: relative;
+
+    &__slider-paginator {
+        position: absolute;
+        bottom: 40px !important;
+        left: 40px !important;
+        padding: 8px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.13);
+        width: auto !important;
+        display: flex;
+        column-gap: 4px;
+
+        @include mixins.bp('desktop-lg') {
+            left: 15px !important;
+        }
+
+        &-bullet {
+            width: 8px;
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+
+            &--active {
+                background-color: #fff;
+                width: 20px;
+            }
+        }
+    }
+
+    &__main-block {
+        background-color: #101316;
+        position: relative;
+        &-inner {
+            position: relative;
+            background-image: url("../img/png/hero/hero-main-banner.png");
+            background-size: 85%;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            padding-top: 9%;
+            padding-bottom: 9%;
+            z-index: 1;
+
+            @include mixins.bp('mobile') {
+                background-size: 150%;
+                background-position-x: 73%;
+                background-position-y: 100%;
+                padding-top: 18%;
+                padding-bottom: 18%;
+            }
+
+            @include mixins.bp('mobile-sm') {
+                padding-top: 30%;
+                padding-bottom: 30%;
+            }
+        }
+
+        &-gradient {
+            position: absolute;
+            bottom: -20%;
+            right: 5%;
+            width: 30%;
+            height: 110%;
+            opacity: 0.56;
+            background-image: linear-gradient(to right, #1E558E 0%, #35F8CC 100%);
+            border-radius: 50%;
+            filter: blur(90px);
+
+            @include mixins.bp('mobile') {
+                width: 25%;
+                height: 100%;
+            }
+        }
+
+        &-stats {
+            display: flex;
+            column-gap: 50px;
+            padding: 0;
+            list-style: none;
+
+            @include mixins.bp('desktop-lg') {
+                column-gap: 30px;
+                max-width: 80%;
+            }
+
+            @include mixins.bp('tablet') {
+               flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+
+        &-title {
+            font-family: variables.$unbounded-font;
+            font-size: 110px;
+            display: flex;
+            column-gap: 38px;
+            align-items: center;
+            color: #fff;
+            margin-bottom: 5%;
+
+            @include mixins.bp('desktop-lg') {
+                margin-bottom: 3%;
+                font-size: 100px;
+            }
+
+            @include mixins.bp('mobile') {
+                font-size: 64px;
+            }
+
+            &-logo {
+                width: 94px;
+                height: 94px;
+
+                @include mixins.bp('mobile') {
+                    display: none;
+                }
+            }
+
+            &-eco {
+                border: 1px solid transparent;
+                width: 94px;
+                height: 94px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                background: linear-gradient(#171A1D, #171A1D) padding-box,
+                linear-gradient(-100deg, rgba(18, 195, 68, 0.5), rgba(255, 255, 255, 0.01)) border-box;
+
+                svg {
+                    width: 35px;
+                    height: 35px;
+                    color: #12C344;
+                }
+
+                @include mixins.bp('mobile') {
+                    display: none;
+                }
+            }
+        }
+
+        &-desc {
+            margin-bottom: 11%;
+            max-width: 60%;
+
+            @include mixins.bp('desktop-lg') {
+                margin-bottom: 9%;
+            }
+
+            @include mixins.bp('tablet') {
+                max-width: 100%;
+            }
+        }
+
+        &-stat {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            @include mixins.bp('desktop-lg') {
+                flex-grow: 1;
+            }
+
+            @include mixins.bp('tablet') {
+                row-gap: 8px;
+            }
+
+            &-title {
+                color: #C0C0C0;
+                word-break: break-word;
+
+                @include mixins.bp('desktop-lg') {
+                    font-size: 14px;
+                }
+            }
+
+            &-desc {
+                font-family: variables.$unbounded-font;
+                font-weight: 600;
+                color: #fff;
+                font-size: 24px;
+                margin-top: auto;
+
+                @include mixins.bp('desktop-lg') {
+                    font-size: 20px;
+                }
+
+                @include mixins.bp('tablet') {
+                    font-size: 18px;
+                }
+
+                @include mixins.bp('tablet') {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}

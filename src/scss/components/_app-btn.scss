@@ -1,0 +1,50 @@
+.app-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    min-height: 45px;
+    border-radius: 100px;
+    background-color: #262B3A;
+    color: #fff;
+    padding: 6px;
+    text-decoration: none;
+
+    &__logo {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    &__text-label {
+        font-size: 9px;
+        color: #8A8484;
+    }
+
+    &__text-title {
+        font-size:12px;
+    }
+
+    &__icon-right {
+        padding: 10px 6px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #29344C;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+        svg {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

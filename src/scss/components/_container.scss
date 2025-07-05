@@ -1,0 +1,24 @@
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1310px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &.container--p-none {
+        max-width: 1280px;
+    }
+
+    &--lg {
+        max-width: 1430px;
+
+        &.container--p-none {
+            max-width: 1400px;
+        }
+    }
+
+    &--p-none {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

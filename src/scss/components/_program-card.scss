@@ -1,0 +1,113 @@
+@use "../mixins" as mixins;
+
+.program-card {
+    height: 100%;
+    border-radius: 23px;
+    background-image:linear-gradient(-100deg, #E9EEF5 0%, #E9F8F9 100%);
+    background-color: #E2E7F1;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 65px 15px 15px 15px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+
+        @include mixins.bp('mobile') {
+            min-height: 560px;
+        }
+
+        &--partner {
+            background-size: 80%;
+            background-image: url('../img/png/program-card/women.png');
+
+            @include mixins.bp('desktop-lg') {
+                background-size: 90%;
+            }
+
+            @include mixins.bp('tablet') {
+                background-size: 60%;
+            }
+
+            @include mixins.bp('mobile') {
+                background-size: 85%;
+            }
+        }
+
+        &--client {
+            background-size: 90%;
+            background-image: url('../img/png/program-card/men.png');
+
+            @include mixins.bp('desktop-lg') {
+                background-size: 100%;
+            }
+
+            @include mixins.bp('tablet') {
+                background-size: 65%;
+            }
+
+            @include mixins.bp('mobile') {
+                background-size: 110%;
+                background-position: 167% bottom;
+            }
+        }
+    }
+
+    &__title {
+        max-width: 38%;
+        margin-bottom: 20px;
+
+        @include mixins.bp('mobile') {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__info {
+        margin-top: auto;
+        border-radius: 13px;
+        background-color: #fff;
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 42px;
+
+        @include mixins.bp('mobile') {
+            padding: 0;
+            background-color: transparent;
+            margin-top: 0;
+            flex-grow: 1;
+        }
+
+        &-desc {
+            text-align: center;
+
+            @include mixins.bp('mobile') {
+                text-align: left;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    &__badge{
+        display: flex;
+        column-gap: 20px;
+        color: rgba(37, 40, 52, 0.88);
+        padding: 12px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.31);
+        align-self: start;
+        margin-bottom: 48px;
+
+        @include mixins.bp('mobile') {
+            margin-bottom: 16px;
+        }
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+            color: rgba(37, 40, 52, 0.88);
+        }
+    }
+}

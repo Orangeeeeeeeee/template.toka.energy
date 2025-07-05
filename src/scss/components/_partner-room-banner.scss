@@ -1,0 +1,107 @@
+@use "../mixins" as mixins;
+
+.partner-room-banner {
+    background-color: #0E0E0E;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+
+    @include mixins.bp('mobile') {
+        border-radius: 0;
+    }
+
+    &__inner {
+        position: relative;
+        background-image: url("../img/png/screen.png");
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding: 100px 49px 64px;
+        z-index: 1;
+
+        @include mixins.bp('tablet') {
+            background-size: 90%;
+            background-position: 243% bottom;
+        }
+
+        @include mixins.bp('mobile') {
+            padding: 50px 15px;
+            background-position: right 45%;
+            background-size: 140%;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            align-items: start;
+            padding-right: 25%;
+
+            @include mixins.bp('mobile') {
+                row-gap: 25px;
+                padding-right: 0;
+            }
+        }
+
+        &-content-desc {
+            padding-right: 25%;
+
+            @include mixins.bp('mobile') {
+                padding-right: 0;
+                font-size: 14px;
+                padding-bottom: 120%;
+            }
+        }
+    }
+
+    &__gradient {
+        position: absolute;
+        bottom: -20%;
+        right: 5%;
+        width: 30%;
+        height: 110%;
+        opacity: 0.56;
+        background-image: linear-gradient(to right, #1E558E 0%, #35F8CC 100%);
+        border-radius: 50%;
+        filter: blur(90px);
+
+        @include mixins.bp('mobile') {
+            left: 50%;
+            top: 50%;
+            bottom: 0;
+            transform: translate(-50%,-50%);
+            height: 60%;
+            width: 60%;
+            filter: blur(100px);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        color: #fff;
+        margin-bottom: 24px;
+
+        &-item {
+            display: flex;
+            column-gap: 16px;
+
+            &-icon {
+                flex-shrink: 0;
+                width: 36px;
+                height: 36px;
+                background-color: #262626;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                svg {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

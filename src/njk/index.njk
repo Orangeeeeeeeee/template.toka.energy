@@ -1,0 +1,989 @@
+---
+title: Home
+---
+{% extends "layouts/_layout.njk" %}
+
+{% block css %}
+    <link rel="stylesheet" href="css/pages/home.min.css"/>
+{% endblock %}
+
+{% block content %}
+
+    <section class="hero home-page__hero">
+        <div class="container container--lg container--p-none">
+            <div class="hero">
+                <div class="swiper js-hero-slider">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__main-block">
+                                <div class="hero__main-block-gradient"></div>
+                                <div class="hero__main-block-inner">
+                                    <div class="container">
+                                        <h1 class="hero__main-block-title">
+                                            ТОКА
+                                            {{mixins.iconSvgMono('logo', 'hero__main-block-title-logo')}}
+                                            <span class="hero__main-block-title-eco">
+                                                {{mixins.iconSvgMono('eco')}}
+                                            </span>
+                                        </h1>
+                                        <p class="title title--h4 f-w--300 c--gray hero__main-block-desc">
+                                            Створюючи комфорт для користування електромобілями <span class="c--white f-w--600">ми робимо майбутнє зручним</span>
+                                        </p>
+                                        <ul class="hero__main-block-stats">
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Заряджених авто</span>
+                                                <span class="hero__main-block-stat-desc">1 000 000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Клієнтів</span>
+                                                <span class="hero__main-block-stat-desc">65 000 + </span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">Зарядних портів</span>
+                                                <span class="hero__main-block-stat-desc">1000 +</span>
+                                            </li>
+                                            <li class="hero__main-block-stat">
+                                                <span class="hero__main-block-stat-title">За кількістю швидкісних зарядок</span>
+                                                <span class="hero__main-block-stat-desc">№1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hero__slider-paginator js-hero-slider-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="home-page__partners">
+        <div class="container container--lg">
+            <div class="partners-slider">
+                <div class="swiper js-partners-slider-top">
+                    <div class="swiper-wrapper partners-slider__wrapper">
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/audi.svg" alt="Audi logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/fishka.svg" alt="Fishka logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/hyundai.svg" alt="Hyundai logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/metro.svg" alt="Metro logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/nissan.svg" alt="Nissan logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/ukrgasbank.svg" alt="Ukrgasbank logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/okko.svg" alt="Okko logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners-slider">
+                <div class="swiper js-partners-slider-bottom">
+                    <div class="swiper-wrapper partners-slider__wrapper">
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/audi.svg" alt="Audi logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/nissan.svg" alt="Nissan logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/fishka.svg" alt="Fishka logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/okko.svg" alt="Okko logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/hyundai.svg" alt="Hyundai logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/metro.svg" alt="Metro logo">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="partners-slider__item">
+                                <img src="img/svg/partners/ukrgasbank.svg" alt="Ukrgasbank logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-page__programs">
+        <div class="container">
+            <div class="home-page__programs-content">
+                <div class="home-page__programs-item">
+                    <div class="program-card">
+                        <div class="program-card__inner program-card__inner--client">
+                            <h2 class="title title--h3 f-w--600 program-card__title">Стати кліентом тока</h2>
+                            <div class="program-card__info">
+                                <p class="program-card__info-desc">Обираючи ТОКА ви гарантовано отримаєте переваги ефективно та швидко заряджаючи свій електромобіль у комфортних локаціях по всій Україні</p>
+                                {{mixins.linkPrimary(false, 'Детальніше')}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-page__programs-item">
+                    <div class="program-card">
+                        <div class="program-card__inner program-card__inner--partner">
+                            <h2 class="title title--h3 f-w--600 program-card__title">Стати партнером тока</h2>
+                            <span class="program-card__badge">
+                            {{mixins.iconSvgMono('like', 'program-card__badge-icon')}}
+                            Легко та вигідно
+                        </span>
+                            <div class="program-card__info">
+                                <p class="program-card__info-desc">Високотехнологічна зарядна станція сприяє збільшенню кількості нових та підвищенню лояльності вже існуючих клієнтів Вашого ресторану, спорт-клуб чи бізнес-центру. Задоволені відвідувачі - запорука успішного бізнесу. Включайся в майбутнє з ТОКА</p>
+                                {{mixins.linkPrimary(false, 'Детальніше')}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-page__assortment">
+        <div class="container home-page__assortment-section-head">
+            {{mixins.sectionHead('Придбати електрозарядну станцію', 'Для комерційних цілей та домашнього користування', 'home-page__assortment-section-head t-a--center')}}
+            <div class="tabs home-page__assortment-tabs">
+                <div class="tabs__header">
+                    <div class="tabs__header-item is-active">Домашні</div>
+                    <div class="tabs__header-item">Комерційні</div>
+                    <div class="tabs__header-item">Швидкісні DC</div>
+                    <div class="tabs__header-item">Кабеля</div>
+                </div>
+                <div class="tabs__content">
+                    <div class="swiper js-product-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__img-container">
+                                        <div class="product-card__img-container-inner">
+                                            <img src="img/png/examples-products/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h3 class="title title--h5 f-w--300">Schneider Electric EVlink Smart Wallbox EVB1A7PAKI</h3>
+                                        <span class="product-card__price">35 580 ₴</span>
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Потужність</span>
+                                                <span class="product-card__info-item-value f-w--500">60 кВт</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Кількість портів</span>
+                                                <span class="product-card__info-item-value f-w--500">4</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">Smart</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                            <li class="product-card__info-item">
+                                                <span class="product-card__info-item-name">RFID</span>
+                                                <span class="product-card__info-item-value f-w--500">Так</span>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="product-card__info">
+                                            <li class="product-card__info-item--rows">
+                                                <span class="product-card__info-item-name">Тип порту</span>
+                                                <div class="product-card__info-item-badges">
+                                                    <span class="product-card__info-item-badge">GB/T АС</span>
+                                                    <span class="product-card__info-item-badge">Type 2</span>
+                                                    <span class="product-card__info-item-badge">Type 1</span>
+                                                    <span class="product-card__info-item-badge">GB/T DC</span>
+                                                    <span class="product-card__info-item-badge">CHAdeMO</span>
+                                                    <span class="product-card__info-item-badge">CCS2</span>
+                                                    <span class="product-card__info-item-badge">CCS1</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-a--center home-page__assortment-action">
+                {{mixins.linkPrimary(false, 'Перейти до магазину')}}
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-page__about">
+        <div class="container">
+            <div class="t-a--center home-page__about-head">
+                <span class="badge badge--blue-gradient t-t--uppercase home-page__about-head-badge">Про ТОКА</span>
+                <h2 class="title title--h1 f-w--300 t-t--uppercase home-page__about-head-title">Створюючи зручні умови для користування електромобілем <span class="f-w--700 c--blue">ми формуємо комфортне майбутнє</span></h2>
+            </div>
+            <div class="home-page__about-content">
+                <div>
+                    <p class="home-page__about-content-desc">Місія компанії – зробити володіння електромобілем таким самим комфортним, як і автомобілем з Двигуном внутрішнього згоряння.</p>
+                    {{mixins.linkPrimary(false, 'Детальніше про ТОКА')}}
+                </div>
+                <ul class="checked-list">
+                    <li class="checked-list__item">
+                        <span class="checked-list__item-icon">{{mixins.iconSvgMono('check')}}</span>
+                        <p>Ми з нуля розробили та налагодили виробництво комерційних та домашніх зарядних комплексів, що на сьогодні складають 50% з українських комплектуючих.</p>
+                    </li>
+                    <li class="checked-list__item">
+                        <span class="checked-list__item-icon">{{mixins.iconSvgMono('check')}}</span>
+                        <p>Розробили хмарну платформу для управління мережею ЕЗК  ТОКА</p>
+                    </li>
+                    <li class="checked-list__item">
+                        <span class="checked-list__item-icon">{{mixins.iconSvgMono('check')}}</span>
+                        <p>Ми встановили понад 200 публічних ЕЗК, на яких одночасно може заряджатися близько 450 електромобілів.</p>
+                    </li>
+                    <li class="checked-list__item">
+                        <span class="checked-list__item-icon">{{mixins.iconSvgMono('check')}}</span>
+                        <p>Послугами мережі ТОКА користується понад 63000 клієнтів по всій Україні</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-page__partner-room-banner">
+        <div class="container container--p-none">
+            <div class="partner-room-banner">
+                <div class="partner-room-banner__inner">
+                    <div class="partner-room-banner__inner-content">
+                        <span class="badge badge--gray t-t--uppercase">Кабінет партнера</span>
+                        <h2 class="title title--h3 f-w--500 c--white">Розумне програмне забезпечення для зарядки електромобілів</h2>
+                        <p class="c--gray l-h--140 partner-room-banner__inner-content-desc">Ми створили програмне забезпечення для прозорого та гнучкого управління зарядними станціями. Легко та без зусиль долучайте Вашу зарядну станцію до найбільшої української мережі. Контролюйте процес та отримуйте актуальну інформацію через інтуїтивно зрозумілий інтерфейс. Включайся в інновації з ТОКА, щоб разом розбудовувати зарядну інфраструктури для електромобілістів України</p>
+                        <div>
+                            <ul class="partner-room-banner__list">
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Дашборд</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Менеджмент власної мережі зарядних станцій</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Управління клієнтською базою</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Керування тарифами</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Маркетинг</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Контроль доходів</p>
+                                </li>
+                                <li class="partner-room-banner__list-item">
+                                    <span class="partner-room-banner__list-item-icon">{{mixins.iconSvgMono('check')}}</span>
+                                    <p>Можливість інтеграції з CRM, ERP</p>
+                                </li>
+                            </ul>
+                            {{mixins.linkSecondary(false, 'Стати партнером')}}
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-room-banner__gradient"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-page__app">
+        <div class="container container--lg container--p-none">
+            {{mixins.sectionHead('Мобільний додаток', 'Завантажити додаток тока', 'home-page__app-head t-a--center')}}
+            <div class="home-page__app-buttons">
+                {{mixins.appButton('android')}}
+                {{mixins.appButton()}}
+            </div>
+            <div class="home-page__app-img">
+                <img src="img/png/app.png" alt="">
+                <div class="home-page__app-gradient"></div>
+            </div>
+            <div class="t-a--center">
+                {{mixins.linkPrimary(false, 'Перейти до магазину')}}
+            </div>
+        </div>
+    </section>
+
+    <section class="home-page__blog">
+        <div class="container">
+            <div class="home-page__blog-head">
+                <div class="home-page__blog-head-content">
+                    <span class="badge badge--blue-gradient t-t--uppercase">Блог</span>
+                    <h2 class="title title--h3 f-w--500 ">Корисні статті</h2>
+                </div>
+                {{mixins.linkSecondary(true, 'Дивитись усі')}}
+            </div>
+
+            <div class="home-page__blog-content">
+                <article class="blog-card blog-card--row blog-card--row-lg-img">
+                    <div class="blog-card__img-container">
+                        <div class="blog-card__img-container-inner">
+                            <img src="img/jpg/blog-examples/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__content-category">
+                            <span class="t-t--uppercase">Інновації у зарядних технологіях</span>
+                            <span class="blog-card__content-category-time">{{mixins.iconSvgMono('timer')}} 5 хв. читання</span>
+                        </div>
+                        <h3 class="title title--h5 f-w--500">Безпека електромобілів: що потрібно знати про пожежну безпеку електрокара</h3>
+                        <p class="blog-card__content-desc">Досягненням 2014 року став початок власного виробництво дитячих крісел колісних моделі CHILD 1. Спілкування з батьками, їх поради, співпраця з реабілітаційними центрами “Джерело” та “Надія”, наполеглива робота майстрів допомогли створити коляску, яка відповідає усім європейським стандартам.</p>
+                        <div class="blog-card__content-author">
+                            <img src="img/png/avatar.png" alt="" class="blog-card__content-author-avatar">
+                            <div class="blog-card__content-author-info">
+                                <span>Stefan Blahovisnyi</span>
+                                <span class="blog-card__content-author-position">CEO TOKA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card blog-card--row">
+                    <div class="blog-card__img-container">
+                        <div class="blog-card__img-container-inner">
+                            <img src="img/jpg/blog-examples/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__content-category">
+                            <span class="t-t--uppercase">Інновації у зарядних технологіях</span>
+                            <span class="blog-card__content-category-time">{{mixins.iconSvgMono('timer')}} 5 хв. читання</span>
+                        </div>
+                        <h3 class="title title--h5 f-w--500">ТОП-5 електричних вантажівок</h3>
+                        <p class="blog-card__content-desc">ТОКА пропонує інтелектуальні рішення для зарядки електромобілів, сприяючи розвитку низьковуглецевої мобільності</p>
+                        <div class="blog-card__content-author">
+                            <img src="img/png/avatar.png" alt="" class="blog-card__content-author-avatar">
+                            <div class="blog-card__content-author-info">
+                                <span>Stefan Blahovisnyi</span>
+                                <span class="blog-card__content-author-position">CEO TOKA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card blog-card--row">
+                    <div class="blog-card__img-container">
+                        <div class="blog-card__img-container-inner">
+                            <img src="img/jpg/blog-examples/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__content-category">
+                            <span class="t-t--uppercase">Інновації у зарядних технологіях</span>
+                            <span class="blog-card__content-category-time">{{mixins.iconSvgMono('timer')}} 5 хв. читання</span>
+                        </div>
+                        <h3 class="title title--h5 f-w--500">ТОП-5 електричних вантажівок</h3>
+                        <p class="blog-card__content-desc">ТОКА пропонує інтелектуальні рішення для зарядки електромобілів, сприяючи розвитку низьковуглецевої мобільності</p>
+                        <div class="blog-card__content-author">
+                            <img src="img/png/avatar.png" alt="" class="blog-card__content-author-avatar">
+                            <div class="blog-card__content-author-info">
+                                <span>Stefan Blahovisnyi</span>
+                                <span class="blog-card__content-author-position">CEO TOKA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="t-a--center home-page__blog-action">
+                {{mixins.linkSecondary(true, 'Дивитись усі')}}
+            </div>
+        </div>
+    </section>
+
+    <div class="container container--lg container--p-none">
+        <div class="home-page__faq">
+            <div class="container">
+                {{mixins.sectionHead('Популярні питання', 'Завантажити додаток тока', 'home-page__faq-head t-a--center', 'white')}}
+                <div class="tabs home-page__faq-tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__header-item is-active">{{mixins.iconSvgMono('user')}} Загальні </div>
+                        <div class="tabs__header-item">{{mixins.iconSvgMono('briefcase')}} Для бізнесу</div>
+                        <div class="tabs__header-item">{{mixins.iconSvgMono('ev')}} Для користувачів єлектрокарів</div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="js-badger-accordion badger-accordion">
+                            <div class="badger-accordion__header">
+                                <div class="badger-accordion__trigger js-badger-accordion-header -ba-is-active">
+                                    Як розрахувати прибутковість зарядної станції для електромобілів?
+                                </div>
+                            </div>
+                            <div class="badger-accordion__panel js-badger-accordion-panel -ba-is-active">
+                                <div class="js-badger-accordion-panel-inner">
+                                    <div class="badger-accordion__panel-inner">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badger-accordion__header">
+                                <div class="badger-accordion__trigger js-badger-accordion-header">
+                                    Які методи платежів ви приймаєте?
+                                </div>
+                            </div>
+                            <div class="badger-accordion__panel js-badger-accordion-panel">
+                                <div class="js-badger-accordion-panel-inner">
+                                    <div class="badger-accordion__panel-inner">
+                                            Програма «Доступні кредити 5-7-9%»
+                                            Клієнт, який бажає отримати станцію в кредит від ТОКА, може легко звернутися до нас і ми візьмемо на себе всю роботу щодо збору документів та заповнення опитувальників. Найголовніше, щоб клієнт визначився з тим, яку саме станцію він бажає придбати в кредит, і ми готові надати детальний розрахунок за допомогою калькулятора.
+
+                                            Умови кредитування:
+                                            Авансовий платіж від 20%
+                                            Термін кредитування до 5 років.
+
+                                            Ми докладаємо всіх зусиль, щоб зробити процес отримання кредиту максимально зручним для клієнта, беручи на себе важливі етапи від збору документів до розрахунку вартості. Завдяки нашій програмі, клієнти можуть скористатися доступними ставками та гнучкими умовами фінансування для розвитку свого бізнесу з зарядними станціями для електромобілів.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badger-accordion__header">
+                                <div class="badger-accordion__trigger js-badger-accordion-header">
+                                    Які методи платежів ви приймаєте?
+                                </div>
+                            </div>
+                            <div class="badger-accordion__panel js-badger-accordion-panel">
+                                <div class="js-badger-accordion-panel-inner">
+                                    <div class="badger-accordion__panel-inner">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badger-accordion__header">
+                                <div class="badger-accordion__trigger js-badger-accordion-header">
+                                    Чи можна заздалегідь зарезервувати місце на станції для зарядки?
+                                </div>
+                            </div>
+                            <div class="badger-accordion__panel js-badger-accordion-panel">
+                                <div class="js-badger-accordion-panel-inner">
+                                    <div class="badger-accordion__panel-inner">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-a--center">
+                    {{mixins.linkPrimary(false, 'Дивитись усі')}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+@use "../mixins" as mixins;
+
+.section-head {
+    &__badge {
+        margin-bottom: 14px;
+    }
+
+    &__title {
+        padding-left: 20%;
+        padding-right: 20%;
+
+        @include mixins.bp('tablet') {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        @include mixins.bp('mobile') {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+    }
+}
