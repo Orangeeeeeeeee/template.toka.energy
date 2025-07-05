@@ -10,7 +10,6 @@ global.app = {
     plugins: plugins,
 };
 
-import {copy} from './gulp/tasks/copy.js';
 import {clear} from './gulp/tasks/clear.js';
 import {njk} from './gulp/tasks/njk.js';
 import {server} from './gulp/tasks/server.js';
@@ -22,7 +21,6 @@ import {zip} from "./gulp/tasks/zip.js";
 import {fonts} from "./gulp/tasks/fonts.js";
 
 const watcher = () => {
-    gulp.watch(pathConfig.watch.files, copy);
     gulp.watch(pathConfig.watch.html, njk);
     gulp.watch(pathConfig.watch.scss, scss);
     gulp.watch(pathConfig.watch.js, js);
@@ -31,7 +29,6 @@ const watcher = () => {
 }
 
 const mainTasks = gulp.parallel(
-    copy,
     fonts,
     njk,
     scss,

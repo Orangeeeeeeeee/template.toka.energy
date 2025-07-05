@@ -10,7 +10,6 @@ export const pathConfig = {
         js: `${buildFolder}/js/`,
         css: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
-        files: `${buildFolder}/files/`,
         fonts: `${buildFolder}/fonts/`,
     },
     src: {
@@ -22,7 +21,6 @@ export const pathConfig = {
         js: `${srcFolder}/js/index.js`,
         scss: `${srcFolder}/scss/**/[^_]*.scss`,
         html: `${srcFolder}/njk/[^_]*.njk`,
-        files: `${srcFolder}/files/**/*.*`,
         fonts: `${srcFolder}/fonts/**/*.{woff,woff2}`,
     },
     watch: {
@@ -33,7 +31,6 @@ export const pathConfig = {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/njk/**/*.njk`,
-        files: `${srcFolder}/files/**/*.*`,
         fonts: `${srcFolder}/fonts/**/*.{woff,woff2}`,
     },
     clean: buildFolder,
