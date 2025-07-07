@@ -1,42 +1,39 @@
 import * as path from 'path';
 const rootFolder = path.basename(path.resolve());
-const buildFolder = './dist';
-const srcFolder = './src';
+const buildFolder = path.join('dist');
+const srcFolder = path.join('src');
 
 export const pathConfig = {
     build: {
-        icons: `${buildFolder}/icons/`,
-        img: `${buildFolder}/img/`,
-        js: `${buildFolder}/js/`,
-        css: `${buildFolder}/css/`,
-        html: `${buildFolder}/`,
-        fonts: `${buildFolder}/fonts/`,
+        icons: path.join(buildFolder, 'icons'),
+        img: path.join(buildFolder, 'img'),
+        js: path.join(buildFolder, 'js'),
+        css: path.join(buildFolder, 'css'),
+        html: path.join(buildFolder),
+        fonts: path.join(buildFolder, 'fonts'),
     },
     src: {
-        pngIcons2x: `${srcFolder}/png-icons/**/*@2x.png`,
-        pngIcons: `${srcFolder}/png-icons/**/*.png`,
-        svgMulti: `${srcFolder}/svg-icons/multi/*.svg`,
-        svgMono: `${srcFolder}/svg-icons/mono/*.svg`,
-        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
-        js: `${srcFolder}/js/index.js`,
-        scss: `${srcFolder}/scss/**/[^_]*.scss`,
-        html: `${srcFolder}/njk/[^_]*.njk`,
-        fonts: `${srcFolder}/fonts/**/*.{woff,woff2}`,
+        svgMulti: path.join(srcFolder, 'svg-icons', 'multi', '*.svg'),
+        svgMono: path.join(srcFolder, 'svg-icons', 'mono', '*.svg'),
+        img: path.join(srcFolder, 'img', '**', '*.{jpg,jpeg,png,gif,svg}'),
+        js: path.join(srcFolder, 'js', 'index.js'),
+        scss: path.join(srcFolder, 'scss', '**', '[^_]*.scss'),
+        html: path.join(srcFolder, 'njk', '[^_]*.njk'),
+        fonts: path.join(srcFolder, 'fonts', '**', '*.{woff,woff2}'),
     },
     watch: {
-        pngIcons: `${srcFolder}/png-icons/**/*.png`,
-        svgMulti: `${srcFolder}/svg-icons/multi/*.svg`,
-        svgMono: `${srcFolder}/svg-icons/mono/*.svg`,
-        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
-        js: `${srcFolder}/js/**/*.js`,
-        scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/njk/**/*.njk`,
-        fonts: `${srcFolder}/fonts/**/*.{woff,woff2}`,
+        svgMulti: path.join(srcFolder, 'svg-icons', 'multi', '*.svg'),
+        svgMono: path.join(srcFolder, 'svg-icons', 'mono', '*.svg'),
+        img: path.join(srcFolder, 'img', '**', '*.{jpg,jpeg,png,gif,svg}'),
+        js: path.join(srcFolder, 'js', '**', '*.js'),
+        scss: path.join(srcFolder, 'scss', '**', '*.scss'),
+        html: path.join(srcFolder, 'njk', '**', '*.njk'),
+        fonts: path.join(srcFolder, 'fonts', '**', '*.{woff,woff2}'),
     },
     clean: buildFolder,
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    njkFolder: `${srcFolder}/njk`,
-    scssMixinsFolder: `${srcFolder}/scss/mixins`,
+    njkFolder: path.join(srcFolder, 'njk'),
+    scssMixinsFolder: path.join(srcFolder, 'scss', 'mixins'),
 }
