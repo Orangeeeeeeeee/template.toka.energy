@@ -16,7 +16,7 @@ import {server} from './gulp/tasks/server.js';
 import {scss} from './gulp/tasks/scss.js';
 import {js} from './gulp/tasks/js.js';
 import {img} from './gulp/tasks/img.js';
-import {svgMono, svgMulti} from "./gulp/tasks/svg-icons.js";
+import {svgMono} from "./gulp/tasks/svg-icons.js";
 import {zip} from "./gulp/tasks/zip.js";
 import {fonts} from "./gulp/tasks/fonts.js";
 
@@ -34,7 +34,7 @@ const mainTasks = gulp.parallel(
     scss,
     js,
     img,
-    svgMulti,
+    // svgMulti,
     svgMono
 );
 
@@ -44,7 +44,7 @@ const createZip = gulp.series(clear, mainTasks, zip);
 
 const createSprites = gulp.series(
     clear,
-    svgMulti,
+    // svgMulti,
     svgMono,
 );
 

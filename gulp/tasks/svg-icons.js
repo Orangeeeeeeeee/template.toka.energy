@@ -33,7 +33,7 @@ export const svgMulti = () => {
                                         {
                                             name: 'removeAttrs',
                                             params: {
-                                                attrs: '(class|data-name)' // Наприклад, видалити певні атрибути
+                                                attrs: '(class|data-name)'
                                             }
                                         },
                                         {
