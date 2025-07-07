@@ -1,3 +1,82 @@
-<header class="header">
-    footer
+<header class="header js-header">
+    <div class="container container--lg container--p-none">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">{{mixins.iconSvgMono('logo')}}</a>
+
+                    <div class="header__content">
+                        <nav class="header__nav">
+                            <p class="header__nav-title">Меню</p>
+                            <ul class="header__nav-list">
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Про TOKA {{mixins.iconSvgMono('arrow-down')}}
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Магазин
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Клієнтам {{mixins.iconSvgMono('arrow-down')}}
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Питання та  відповіді
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav class="header__nav header__products">
+                            <p class="header__nav-title">Меню</p>
+                            <ul class="header__nav-list">
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Покупка електромобіля {{mixins.iconSvgMono('arrow')}}
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Прокат електромобіля {{mixins.iconSvgMono('arrow')}}
+                                    </a>
+                                </li>
+                                <li class="header__nav-list-item">
+                                    <a href="" class="header__nav-list-item-name">
+                                        Електромобіль у лізинг {{mixins.iconSvgMono('arrow')}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__actions">
+                            <button class="header__action">{{mixins.iconSvgMono('search')}}</button>
+                            <button class="header__action">{{mixins.iconSvgMono('lang')}}</button>
+                            <a class="header__btn header__btn--secondary">Для партнерів</a>
+                            <a class="header__btn header__btn--primary">Стати партнером</a>
+                        </div>
+                        <div class="header__socials">
+                            <a href="#" class="social-link social-link--black">{{mixins.iconSvgMono('linkedin')}}</a>
+                            <a href="#" class="social-link social-link--black">{{mixins.iconSvgMono('youtube')}}</a>
+                            <a href="#" class="social-link social-link--black">{{mixins.iconSvgMono('instagram')}}</a>
+                            <a href="#" class="social-link social-link--black">{{mixins.iconSvgMono('facebook')}}</a>
+                        </div>
+                    </div>
+
+                    <button type="button" class="header__burger js-burger-btn">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>

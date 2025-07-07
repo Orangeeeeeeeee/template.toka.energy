@@ -8,7 +8,7 @@ class App {
     }
 
     initCommonController () {
-        new CommonController().init();
+        new CommonController();
     }
 
     getRoute(){

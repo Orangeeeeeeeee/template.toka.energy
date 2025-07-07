@@ -1,5 +1,6 @@
 import Slider from "../components/slider.js";
 import Accordion from "../components/accordion.js";
+import Collapse from "../components/collapse.js";
 import {Autoplay, Pagination} from 'swiper/modules';
 import {BREAKPOINT_MOBILE, BREAKPOINT_TABLET} from "../constans/breakpoints.js";
 
@@ -13,6 +14,7 @@ class HomeCtrl {
         this.initHeroSlider();
         this.initProductSlider();
         this.initFaqAccordion();
+        this.initCollapseHowItsWork();
     }
 
     initPartnersSliders () {
@@ -88,10 +90,14 @@ class HomeCtrl {
     initFaqAccordion () {
         const accordionDomNode = document.querySelector('.js-badger-accordion'),
             options = {
-                openHeadersOnLoad: [0],
+                openHeadersOnLoad: [1],
             }
 
         new Accordion(accordionDomNode, options);
+    }
+
+    initCollapseHowItsWork () {
+        new Collapse('.js-collapse-how-it-work')
     }
 }
 

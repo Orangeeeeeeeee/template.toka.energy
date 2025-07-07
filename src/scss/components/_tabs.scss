@@ -1,8 +1,6 @@
 @use "../mixins" as mixins;
 
 .tabs {
-    margin-bottom: 34px;
-
     &__header {
         display: flex;
         align-items: center;

@@ -1,0 +1,284 @@
+@use "../variables/index" as variables;
+@use "../mixins" as mixins;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &.is-scrolled {
+        .header__wrapper {
+            background-color: #252834;
+        }
+    }
+
+    &.is-open {
+        .header__content {
+            transform: translateY(0);
+        }
+
+        .header__logo {
+            color: #000;
+        }
+    }
+
+    &__burger {
+        width: 47px;
+        height: 47px;
+        padding: 0;
+        color: #fff;
+        flex-shrink: 0;
+        background-color: #1E558E;
+        border: none;
+        border-radius: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 100;
+
+        @include mixins.bp('tablet') {
+            display: flex;
+        }
+
+        & > * {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: #fff;
+            margin: 2px 0;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+
+        &.is-open *:nth-child(1) {
+            transform: rotate(-45deg) translate(-2px, 2px);
+        }
+
+        &.is-open *:nth-child(2) {
+            transform: rotate(45deg) translate(-2px, -2px);
+        }
+    }
+
+    &__wrapper {
+        border-bottom: 1px solid #272727;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 26px;
+    }
+
+    &__logo {
+        display: inline-flex;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        margin-right: auto;
+        transition: color 0.3s;
+
+        @include mixins.bp('tablet') {
+            z-index: 101;
+            position: relative;
+        }
+    }
+
+    &__nav {
+        &-title {
+            font-size: 14px;
+            margin-bottom: 19px;
+            color: #7C7E85;
+            display: none;
+
+            @include mixins.bp('tablet') {
+                display: block;
+            }
+        }
+
+        &-list {
+            display: flex;
+            align-items: baseline;
+            column-gap: 24px;
+
+            @include mixins.bp('desktop-lg') {
+                font-size: 14px;
+            }
+
+            @include mixins.bp('tablet') {
+                flex-direction: column;
+                row-gap: 22px;
+            }
+
+            &-item {
+                color: #fff;
+
+                @include mixins.bp('tablet') {
+                    color: #000;
+                }
+
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &-name {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 7px;
+                    color: #fff;
+                    text-decoration: none;
+
+                    @include mixins.bp('tablet') {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    &__socials {
+        display: none;
+        align-items: center;
+        column-gap: 8px;
+        justify-content: center;
+
+        @include mixins.bp('tablet') {
+            display: flex;
+        }
+    }
+
+    &__products {
+        display: none;
+
+        @include mixins.bp('tablet') {
+            display: block;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        flex-grow: 1;
+
+        @include mixins.bp('tablet') {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            padding: 96px 15px 74px;
+            z-index: 100;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            row-gap: 35px;
+            transition: transform 0.3s;
+            transform: translateX(-100%);
+            overflow: auto;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        column-gap: 8px;
+
+        @include mixins.bp('tablet') {
+            flex-direction: column;
+            row-gap: 8px;
+            position: absolute;
+            top: 90px;
+            right: 15px;
+        }
+    }
+
+    &__action {
+        width: 52px;
+        height: 52px;
+        background-color: #202326;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        @include mixins.bp('desktop-lg') {
+            width: 47px;
+            height: 47px;
+        }
+
+        @include mixins.bp('tablet') {
+            color: #000;
+
+            background-color: #F5F7FB;
+        }
+    }
+
+
+    &__btn {
+        min-height: 54px;
+        border: 1px solid;
+        display: inline-flex;
+        align-items: center;
+        font-family: variables.$manrope-font;
+        font-size: 16px;
+        border-radius: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        background-color: transparent;
+        padding: 10px 24px;
+        font-weight: 500;
+
+        @include mixins.bp('desktop-lg') {
+            font-size: 14px;
+            padding: 10px 15px;
+            min-height: 47px;
+        }
+
+        @include mixins.bp('tablet') {
+            display: none;
+        }
+
+        &--secondary {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+
+            &:hover {
+                background-color: #fff;
+                color: #252834;
+            }
+        }
+
+        &--primary {
+            background-color: #fff;
+            border-color: #fff;
+            color: #252834;
+
+            &:hover {
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+    }
+}

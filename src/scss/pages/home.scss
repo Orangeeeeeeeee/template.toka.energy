@@ -14,6 +14,8 @@
 
     &__partners  {
         margin-bottom: 70px;
+        position: relative;
+        z-index: 0;
 
         @include mixins.bp('mobile') {
             margin-bottom: 40px;
@@ -258,6 +260,73 @@
 
         &-head {
             margin-bottom: 50px;
+
+            @include mixins.bp('mobile') {
+                margin-bottom: 30px;
+            }
+        }
+
+        &-tabs {
+            margin-bottom: 60px;
+
+            @include mixins.bp('mobile') {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__how-its-work {
+        margin-bottom: 100px;
+        position: relative;
+
+        @include mixins.bp('mobile') {
+            margin-bottom: 30px;
+        }
+
+        &-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            background-image: linear-gradient(to top, #fff 15%, transparent 100%);
+        }
+
+        &-collapse {
+            &.is-open {
+                .home-page__how-its-work-bottom {
+                    background-color: transparent;
+                    background-image: none;
+                }
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            padding-bottom: 100px;
+        }
+
+        &-content-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        &-content-item-desc {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            @include mixins.bp('mobile') {
+                font-size: 14px;
+            }
+        }
+
+        &-collapse-content {
+            max-height: 550px;
         }
     }
 }

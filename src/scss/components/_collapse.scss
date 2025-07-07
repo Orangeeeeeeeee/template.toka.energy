@@ -1,0 +1,14 @@
+.collapse {
+    &.is-open {
+        .collapse__content {
+            max-height: none;
+        }
+    }
+
+    &__content {
+        display: block;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+}
